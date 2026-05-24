@@ -63,9 +63,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_EA8D781EB29A40228307F58C23130100 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_D58EEED9508C415AB8BF29B3D3F74DD5 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_4514DDF76F7645FCBC97C5FE0D3A74EA }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_E5B812E489B14EEE9DC2861AD0E6BB8E }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_1D7CE77D65654B04A78EDC4672874BF4 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_2080599BBA8C489CA4B608486E4A30FD }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
@@ -73,4 +73,4 @@ jobs:
         with:
           app-name: 'flower'
           slot-name: 'Production'
-          package: .
+          
